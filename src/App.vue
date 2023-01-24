@@ -1,9 +1,21 @@
 <script>
-export default {};
+import AppHeader from '@/components/AppHeader.vue';
+
+export default {
+    components: {
+        AppHeader,
+    },
+};
 </script>
 
 <template>
-    <h1>Hello, Vue.js!</h1>
+    <div class="app">
+        <AppHeader />
+
+        <div class="mt-3 container">
+            <router-view />
+        </div>
+    </div>
 </template>
 
 <style>
