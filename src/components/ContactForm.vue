@@ -57,11 +57,12 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary">Lưu</button>
+            <button class="btn btn-primary" type="submit">Lưu</button>
             <button
                 v-if="contactLocal._id"
                 type="button"
                 class="ml-2 btn btn-danger"
+                @click="deleteContact"
             >
                 Xóa
             </button>
